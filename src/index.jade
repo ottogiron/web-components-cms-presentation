@@ -1,0 +1,141 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Web Components CMS
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section
+        h1 Web Components CMS
+
+      section
+        h2 Background
+
+      section
+        h2 In the past (5 years ago ?)
+        h3 Server Resposability
+        img(style="height:200px" src="/images/client-server-old.jpg")
+
+      section
+        h2 Modern Web Apps
+        h3 REST
+        h3 Client / Server share tasks
+        img(style="height:200px" src="/images/client-server-new.jpg")
+
+      section
+        h2 Terminology
+
+      section
+        h2 CMS
+        h3 A content management system (CMS) is a computer application that allows publishing, editing and modifying content, organizing, deleting as well as maintenance from a central interface.
+        q Wikipedia
+
+      section
+        h2 Components
+        h3 Are modular units which realize specific functionality to present your content on your website
+
+      section
+        h2 Components Template
+        img(src="/images/components-template.png")
+
+      section
+        h2 How CMS's Work (Demo)
+
+      section
+        h2 "Smart Admin" Web Components CMS
+        img(src="/images/logo.svg")
+
+      section
+        h2 Web Components
+        img(src="/images/logo.svg")
+        h3 Resolves 5 Problems
+        ul
+          li Undescriptive Markup
+          li Style Conflicts
+          li No Native Templates
+          li No bundling
+          li No standard
+
+      section
+        h2 Modules
+
+      section
+        h2 Workbench
+        h3 Content Management UI
+        img(src="/images/workbench.png" style="width:500px")
+
+      section
+        h2 Designer
+        h3 The author can desing pages dragin n' droping components
+        img(src="/images/designer.png" style="width:500px")
+
+      section
+        h2 Web Framework
+        h3 Single Page Apps
+        ul
+          li Web Components, Angular Directives, EmberJS Components etc.
+          li REST API
+          li Authentication and Authorization
+          li Unit Testing
+
+      section
+        h2 Architecture
+        
+
+      section
+        h2 Touch Interaction
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
+
+      section
+        h2 Responsive Slides
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
+
+      section
+        h2 Bullet List
+        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
+        ul
+          li Bullet 1
+          li Bullet 2
+          li Bullet 3
+
+      section
+        h2 Syntax Highlighting
+        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
+        pre
+          code.language-javascript.
+            bespoke.from('article', [
+              classes(),
+              keys(),
+              touch(),
+              bullets('li, .bullet')
+            ]);
+
+      section(data-bespoke-hash='named-route')
+        h2 Named Route
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
+        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h2 Emphatic Slide!
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
+
+      section
+        h2.bullet Just the beginning...
+        br
+        ul
+          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
+          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
+          li Edit JavaScript in <em>'src/scripts/main.js'</em>
+        br
+        ul
+          li
+            strong Enjoy! :)
+            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+
+    script(src='build/build.js')
